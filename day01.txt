@@ -8,3 +8,16 @@ git config --global credential.helper 保存用户名和密码
 创建仓库：只需将一个目录变成Git可以管理的仓库
           1.git init：在自己电脑创建一个仓库
           2.git clone：从远程服务器克隆一个已经存在的仓库
+
+绑定仓库
+git remote add origin https://github.com/graypixel0521/git-learning.git
+
+idea中内置git：文件-git-提交 
+提交快捷键ctrl+k
+推送快捷键ctrl+shift+k
+commit（提交）：只是保存到你**本地电脑的 Git 仓库**，生成一条历史记录，不需要网络，也不会碰 GitHub
+push（推送）：把你本地所有**还没上传过的 commit 记录**，一次性批量同步到 GitHub 云端。
+
+用gitbash提交推送：
+git add . 相当于提交，提交到文件夹的Git仓库
+git commit -m "备注"  相当于推送，推送到GitHub的远程仓库
